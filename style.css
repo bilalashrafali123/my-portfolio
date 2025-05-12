@@ -152,6 +152,10 @@
   margin-top: 20px;
 }
 
+.about-text p {
+  color: grey;
+}
+
 .about-info {
   display: flex;
   flex-direction: column;
@@ -163,6 +167,9 @@
   margin-bottom: 20px;
 }
 
+.about-info span {
+  color:rgb(171, 171, 171);
+}
 
 .container-2 img {
   width: 430px;         
@@ -214,6 +221,13 @@
 .carousel-play-btn {
   color: white;
   font-size: 20px;
+}
+
+.education-experience-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color:#0aaa94;
+  margin-top: 30px;
 }
 
 .education-experience-section {
