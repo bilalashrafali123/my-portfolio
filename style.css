@@ -6,66 +6,138 @@
   }
 
 .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #fff;
-    flex-wrap: wrap; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  flex-wrap: wrap; 
 }
   
-  .navbar h1 {
-    font-size: 40px;
-    white-space: nowrap;
+.navbar h1 {
+  font-size: 40px;
+  white-space: nowrap;
 }
   
-  .navbar h1 span {
-    color: rgb(87, 255, 199);
+.navbar h1 span {
+  color: rgb(87, 255, 199);
 }
   
-  .nav-links {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+.nav-links {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
   
-  .nav-links a {
-    text-decoration: none;
-    font-size: 16px;
-    color: black;
-    padding: 10px 15px;
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  padding: 10px 15px;
 }
   
-  .nav-links a:hover {
-    color: #0BCEAF;
+.nav-links a:hover {
+  color: #0BCEAF;
 }
   
-  .nav-btn {
-    padding: 10px 25px;
-    border-radius: 100px;
-    color: #0BCEAF;
-    border: 1px solid #0BCEAF;
-    cursor: pointer;
-    white-space: nowrap;
+.nav-btn {
+  padding: 10px 25px;
+  border-radius: 100px;
+  color: #0BCEAF;
+  border: 1px solid #0BCEAF;
+  cursor: pointer;
+  white-space: nowrap;
 }
   
-  .nav-btn:hover {
-    background-color: #0BCEAF;
-    color: white;
+.nav-btn:hover {
+  background-color: #0BCEAF;
+  color: white;
 }
   
-  .hamburger {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    cursor: pointer;
- 
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-  
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #0BCEAF;
+}
+
+.container {
+  width: 100%;
+}
+    
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+    
+.container-2 img {
+  width: 430px;         
+  height: 450px;          
+  object-fit:cover;      
+  border-radius: 50%;     
+  border: 1px solid white; 
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.text-content h1 {
+  color: white;
+  font-size: 32px;
+}
+
+.carousel-btn {
+  padding: 10px 25px;
+  border-radius: 100px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  background-color: white;
+  color: #0BCEAF;
+}
+
+.play-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.play-section i {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel-play-btn {
+  color: white;
+  font-size: 20px;
+}
+
 @media (max-width: 983px) {
     .nav-links {
       display: none;
@@ -79,3 +151,100 @@
       display: block;
     }
   }
+  
+  @media (max-width: 991px) {
+    .container-2 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .text-content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .text-content h1 {
+      font-size: 26px;
+    }
+  
+    .play-section {
+      justify-content: center;
+    }
+}
+
+@media (max-width: 991px) {
+  .container-2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .text-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 26px;
+  }
+
+  .play-section {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-2 img {
+    width:400px;
+  }
+
+  .text-content h1 {
+    font-size: 22px;
+  }
+
+  .carousel-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .play-section i {
+    font-size: 30px;
+  }
+
+  .carousel-play-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-2 img {
+    width: 300px;
+  }
+
+  .text-content h1 {
+    font-size: 20px;
+  }
+
+  .carousel-btn {
+    padding: 6px 18px;
+    font-size: 13px;
+  }
+
+  .play-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .play-section i {
+    font-size: 26px;
+  }
+
+  .carousel-play-btn {
+    font-size: 14px;
+  }
+}
+
+  
+
