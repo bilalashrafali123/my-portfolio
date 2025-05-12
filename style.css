@@ -156,11 +156,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* min-width: 200px; */
+/* min-width: 200px; */
+}
+
+.about-info h3 {
+  margin-bottom: 20px;
 }
 
 
-    
 .container-2 img {
   width: 430px;         
   height: 450px;          
