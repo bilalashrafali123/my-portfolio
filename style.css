@@ -1,9 +1,9 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+}
 
 .navbar {
   width: 100%;
@@ -13,8 +13,9 @@
   padding: 15px 30px;
   background-color: #fff;
   flex-wrap: wrap; 
+
 }
-  
+
 .navbar h1 {
   font-size: 40px;
   white-space: nowrap;
@@ -76,8 +77,9 @@
 
 .container {
   width: 100%;
-}
-    
+  }
+
+
 .container-2 {
   display: flex;
   align-items: center;
@@ -85,6 +87,79 @@
   gap: 50px;
   flex-wrap: wrap;
 }
+
+.about-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.about-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.about-text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.about-btn {
+  padding: 10px 25px;
+  border-radius: 100px;
+  color: #0BCEAF;
+  border: 1px solid #0BCEAF;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.about-btn:hover {
+  background-color: #0aaa94;
+}
+
+.about-section h1{
+  text-align: center;
+  color: #0aaa94;
+  font-size: 40px;
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* min-width: 200px; */
+}
+
+
     
 .container-2 img {
   width: 430px;         
@@ -243,6 +318,31 @@
 
   .carousel-play-btn {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .about-text {
+    align-items: center;
+  }
+
+  .about-me {
+    justify-content: center;
+  }
+
+  .about-buttons {
+    justify-content: center;
   }
 }
 
