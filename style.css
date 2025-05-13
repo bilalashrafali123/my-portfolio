@@ -1,8 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .navbar {
@@ -12,19 +12,18 @@
   align-items: center;
   padding: 15px 30px;
   background-color: #fff;
-  flex-wrap: wrap; 
-
+  flex-wrap: wrap;
 }
 
 .navbar h1 {
   font-size: 40px;
   white-space: nowrap;
 }
-  
+
 .navbar h1 span {
   color: rgb(87, 255, 199);
 }
-  
+
 .nav-links {
   display: flex;
   flex: 1;
@@ -32,18 +31,18 @@
   gap: 10px;
   flex-wrap: wrap;
 }
-  
+
 .nav-links a {
   text-decoration: none;
   font-size: 16px;
   color: black;
   padding: 10px 15px;
 }
-  
+
 .nav-links a:hover {
   color: #0BCEAF;
 }
-  
+
 .nav-btn {
   padding: 10px 25px;
   border-radius: 100px;
@@ -52,12 +51,12 @@
   cursor: pointer;
   white-space: nowrap;
 }
-  
+
 .nav-btn:hover {
   background-color: #0BCEAF;
   color: white;
 }
-  
+
 .hamburger {
   display: none;
   font-size: 28px;
@@ -66,7 +65,7 @@
   cursor: pointer;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,8 +76,7 @@
 
 .container {
   width: 100%;
-  }
-
+}
 
 .container-2 {
   display: flex;
@@ -100,8 +98,7 @@
   align-items: center;
   justify-content: center;
   max-width: 1200px;
-  margin: auto;
-  margin-top: 60px;
+  margin: 60px auto 0;
 }
 
 .about-img {
@@ -139,7 +136,7 @@
   background-color: #0aaa94;
 }
 
-.about-section h1{
+.about-section h1 {
   text-align: center;
   color: #0aaa94;
   font-size: 40px;
@@ -160,7 +157,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-/* min-width: 200px; */
 }
 
 .about-info h3 {
@@ -168,15 +164,15 @@
 }
 
 .about-info span {
-  color:rgb(171, 171, 171);
+  color: rgb(171, 171, 171);
 }
 
 .container-2 img {
-  width: 430px;         
-  height: 450px;          
-  object-fit:cover;      
-  border-radius: 50%;     
-  border: 1px solid white; 
+  width: 430px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid white;
 }
 
 .text-content {
@@ -226,7 +222,7 @@
 .education-experience-section-title {
   text-align: center;
   font-size: 2.5rem;
-  color:#0aaa94;
+  color: #0aaa94;
   margin-top: 30px;
 }
 
@@ -280,12 +276,10 @@
   line-height: 1.6;
 }
 
-.eduaction-and-experience-heading{
+.eduaction-and-experience-heading {
   text-align: center;
   color: #0aaa94;
-  
 }
-
 
 @media (max-width: 991px) {
   .education-experience-section {
@@ -296,52 +290,14 @@
   .timeline-column {
     max-width: 100%;
   }
-}
 
-
-@media (max-width: 983px) {
-    .nav-links {
-      display: none;
-    }
-  
-    .nav-btn {
-      display: none;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .container-2 {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .text-content {
-      align-items: center;
-      text-align: center;
-    }
-  
-    .text-content h1 {
-      font-size: 26px;
-    }
-  
-    .play-section {
-      justify-content: center;
-    }
-}
-
-@media (max-width: 991px) {
   .container-2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 30px;
   }
-  
+
   .text-content {
     align-items: center;
     text-align: center;
@@ -356,9 +312,23 @@
   }
 }
 
+@media (max-width: 983px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   .container-2 img {
-    width:400px;
+    width: 400px;
   }
 
   .text-content h1 {
@@ -376,6 +346,29 @@
 
   .carousel-play-btn {
     font-size: 16px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .about-text {
+    align-items: center;
+  }
+
+  .about-me {
+    justify-content: center;
+  }
+
+  .about-buttons {
+    justify-content: center;
   }
 }
 
@@ -406,31 +399,3 @@
     font-size: 14px;
   }
 }
-
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .about-text {
-    align-items: center;
-  }
-
-  .about-me {
-    justify-content: center;
-  }
-
-  .about-buttons {
-    justify-content: center;
-  }
-}
-
-  
-
