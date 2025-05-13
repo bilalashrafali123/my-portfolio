@@ -555,7 +555,75 @@
   color: white;
 }
 
+.contact-me-text h1 {
+  text-align: center;
+  color: #0aaa94;
+  font-size: 3rem;
+  margin-top: 10rem;
+}
 
+.contact-form {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-input input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: none;
+  border-radius: 20px;
+}
+
+.contact-btn {
+  padding: 10px 25px;
+  border-radius: 100px;
+  color: #0BCEAF;
+  border: 1px solid #0BCEAF;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: white;
+  align-self: center;
+}
+
+.contact-btn:hover {
+  background-color: #0BCEAF;
+  color: white;
+}
+
+.form-section input:hover {
+  border: 1px solid #0BCEAF;
+}
+
+.form-section textarea:hover {
+  border: 1px solid #0BCEAF;
+} 
 
 @media (max-width: 768px) {
   .portfolio-images {
@@ -826,3 +894,29 @@
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 600px) {
+  .form-input {
+    flex-direction: column;
+  }
+
+  .form-input input {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  .contact-me-text h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
