@@ -290,7 +290,6 @@
 }
 
 .timeline-column {
-  /* flex: 1; */
   min-width: 300px;
   max-width: 500px;
 }
@@ -418,7 +417,6 @@
   white-space: nowrap;
   margin: 10px 5px 0;
   background-color: white;
-  transition: 0.3s ease;
 }
 
 .my-portfolio-text button:hover {
@@ -458,7 +456,7 @@
 
 .review-client-text h3 {
   color: #878686;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .review-text h1 {
@@ -509,8 +507,7 @@
 }
 
 .blog-text {
-  /* text-align: center; */
-  margin-bottom: 30px;
+margin-bottom: 30px;
 }
 
 .my-blogs {
@@ -624,6 +621,94 @@
 .form-section textarea:hover {
   border: 1px solid #0BCEAF;
 } 
+
+.footer-section {
+  width: 100%;
+  background-color: #0BCEAF;
+  height: 325px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+.footer-icons span i {
+  padding: 10px 0;
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 40px;
+  text-align: center;
+  margin-top: 60px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap; 
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer-icons i:hover {
+  color: grey;
+}
+
+.footer-copyright a {
+  text-decoration: none;
+  color: #f3f3f3;
+  font-weight: bold;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    height: auto; 
+    padding: 15px;
+  }
+
+  .footer-icons {
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .footer-links {
+    margin-top: 15px;
+    gap: 15px;
+  }
+
+  .footer-copyright {
+    margin-top: 15px;
+  }
+}
 
 @media (max-width: 768px) {
   .portfolio-images {
@@ -917,6 +1002,28 @@
   .contact-btn {
     width: 100%;
     padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-icons {
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+    gap: 8px;
+  }
+
+  .footer-copyright {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .footer-icons span i {
+    width: 40px;
+    height: 35px;
   }
 }
 
