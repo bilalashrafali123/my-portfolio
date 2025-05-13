@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar {
@@ -396,51 +396,6 @@
   font-size: 15px;
   line-height: 1.5;
 }
-/* 
-.my-portfolio-text {
-  text-align: center;
-  color: #0aaa94;
-  font-size: 2rem;
-  margin-top: 40px;
-}
-
-.portfolio  {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 35px;
-  padding: 0 20px;
-}
-
-.portfolio-images {
-  display: flex;
-  flex-direction:row;
-  align-items: center;
-  gap: 20px;
-}
-
-.portfolio-images img {
-  width: 349px;
-  height: 262px;
-  border-radius: 5px;
-}
-
-.my-portfolio-text button {
-  padding: 10px 25px;
-  border-radius: 100px;
-  color: #0BCEAF;
-  border: 1px solid #0BCEAF;
-  cursor: pointer;
-  white-space: nowrap;
-  margin-top: 10px;
-  background-color: white;
-}
-
-.my-portfolio-text button:hover {
-  background-color: #0BCEAF;
-  color: white;
-} */
 
 .my-portfolio-text {
   text-align: center;
@@ -495,7 +450,57 @@
   object-fit: cover;
 }
 
-/* Responsive Design */
+.review-client-text {
+  text-align: center;
+  color: black;
+  margin-top: 2rem;
+}
+
+.review-client-text h3 {
+  color: #878686;
+  margin-top: 0.5rem;
+}
+
+.review-text h1 {
+  text-align: center;
+  color: #0aaa94;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.review-comma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.review-comma h1 {
+  color: #0BCEAF;
+  font-size: 6rem;
+  margin: 0;
+}
+
+.review-comma p {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  max-width: 90%;
+}
+
+.review-comma img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.review-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 @media (max-width: 768px) {
   .portfolio-images {
     flex-direction: column;
@@ -530,8 +535,6 @@
     max-width: 250px;
   }
 }
-
-
 
 @media (max-width: 991px) {
   .education-experience-section {
@@ -696,3 +699,41 @@
   }
 }
 
+@media (max-width: 768px) {
+  .review-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .review-comma h1 {
+    font-size: 4rem;
+  }
+
+  .review-comma p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .review-comma img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .review-comma h1 {
+    font-size: 3rem;
+  }
+
+  .review-comma p {
+    font-size: 0.95rem;
+  }
+
+  .review-comma img {
+    width: 75px;
+    height: 75px;
+  }
+}
