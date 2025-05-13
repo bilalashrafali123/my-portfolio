@@ -132,6 +132,69 @@
   white-space: nowrap;
 }
 
+/* .skill-bar {
+  width: 500px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin: 20px 0;
+  height: 20px;
+  text-align: right;
+  background-color:#0aaa94;
+  color: white;
+} */
+
+.skill-bar {
+  width: 100%;
+  width: 500px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin: 20px 0;
+  height: 20px;
+  text-align: right;
+  background-color: #0aaa94;
+  color: white;
+}
+
+.my-skills-heading{
+  text-align: center;
+  font-size: 4rem;
+  color: #0aaa94;
+}
+
+.skill-bar-css {
+  background-color:orange;
+}
+
+.skill-bar-js {
+  background-color: red;
+}
+
+.skill-bar-react {
+  background-color: red;
+}
+
+.skill-bar-nextjs {
+  background-color: black;
+}
+
+.skill-bar-expressjs {
+  background-color: cornflowerblue;
+}
+
+.my-skill-section{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.my-skill h2{
+  color: #878686;
+  line-height: 1.5rem;
+  font-size: 16px;
+}
+
 .about-btn:hover {
   background-color: #0aaa94;
 }
@@ -139,7 +202,7 @@
 .about-section h1 {
   text-align: center;
   color: #0aaa94;
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .about-me {
@@ -221,7 +284,7 @@
 
 .education-experience-section-title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: #0aaa94;
   margin-top: 30px;
 }
@@ -277,6 +340,12 @@
 }
 
 .eduaction-and-experience-heading {
+  text-align: center;
+  color: #0aaa94;
+}
+
+.my-skill-section-text h1{
+  font-size: 4rem;
   text-align: center;
   color: #0aaa94;
 }
@@ -397,5 +466,43 @@
 
   .carousel-play-btn {
     font-size: 14px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .skill-bar {
+    width: 90%;
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-skill-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .skill-bar {
+    width: 90%;
+    max-width: 100%;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-bar {
+    width: 95%;
+    min-width: 250px;
+  }
+
+  .my-skills-heading {
+    font-size: 2rem;
+  }
+
+  .skill-percentage {
+    font-size: 12px;
+    padding-right: 5px;
   }
 }
