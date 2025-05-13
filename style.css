@@ -50,6 +50,7 @@
   border: 1px solid #0BCEAF;
   cursor: pointer;
   white-space: nowrap;
+  background-color: white;
 }
 
 .nav-btn:hover {
@@ -130,6 +131,7 @@
   border: 1px solid #0BCEAF;
   cursor: pointer;
   white-space: nowrap;
+  background-color: white;
 }
 
 .skill-bar {
@@ -394,6 +396,142 @@
   font-size: 15px;
   line-height: 1.5;
 }
+/* 
+.my-portfolio-text {
+  text-align: center;
+  color: #0aaa94;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+.portfolio  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 35px;
+  padding: 0 20px;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap: 20px;
+}
+
+.portfolio-images img {
+  width: 349px;
+  height: 262px;
+  border-radius: 5px;
+}
+
+.my-portfolio-text button {
+  padding: 10px 25px;
+  border-radius: 100px;
+  color: #0BCEAF;
+  border: 1px solid #0BCEAF;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.my-portfolio-text button:hover {
+  background-color: #0BCEAF;
+  color: white;
+} */
+
+.my-portfolio-text {
+  text-align: center;
+  color: #0aaa94;
+  font-size: 2rem;
+  margin-top: 40px;
+  padding: 0 15px;
+}
+
+.my-portfolio-text h1 {
+  font-size: 2.5rem;
+}
+
+.my-portfolio-text button {
+  padding: 10px 25px;
+  border-radius: 100px;
+  color: #0BCEAF;
+  border: 1px solid #0BCEAF;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 10px 5px 0;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+.my-portfolio-text button:hover {
+  background-color: #0BCEAF;
+  color: white;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 35px;
+  padding: 0 20px;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-images img {
+  width: 100%;
+  max-width: 349px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-portfolio-text h1 {
+    font-size: 2rem;
+  }
+
+  .my-portfolio-text button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-portfolio-text {
+    font-size: 1.5rem;
+  }
+
+  .my-portfolio-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .portfolio-images img {
+    max-width: 90%;
+  }
+
+  .my-portfolio-text button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+
 
 @media (max-width: 991px) {
   .education-experience-section {
