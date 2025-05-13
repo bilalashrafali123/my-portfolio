@@ -146,7 +146,7 @@
 
 .my-skills-heading{
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #0aaa94;
 }
 
@@ -191,7 +191,7 @@
 .about-section h1 {
   text-align: center;
   color: #0aaa94;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .about-me {
@@ -273,7 +273,7 @@
 
 .education-experience-section-title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #0aaa94;
   margin-top: 30px;
 }
@@ -288,7 +288,7 @@
 }
 
 .timeline-column {
-  flex: 1;
+  /* flex: 1; */
   min-width: 300px;
   max-width: 500px;
 }
@@ -337,6 +337,62 @@
   font-size: 4rem;
   text-align: center;
   color: #0aaa94;
+}
+
+.my-services a {
+  color: #0BCEAF;
+  margin-top:20px ;
+}
+
+.my-services a:hover {
+  color: #029682;
+}
+
+.my-services-text {
+  text-align: center;
+  color: #0aaa94;
+  font-size: 4rem;
+  margin-top: 40px;
+}
+.my-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 35px;
+  padding: 0 20px;
+}
+
+.my-service {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-service i {
+  font-size: 40px;
+  background-color: #00d4b3;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.my-service h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.my-service p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 @media (max-width: 991px) {
@@ -495,3 +551,10 @@
     padding-right: 5px;
   }
 }
+
+@media (max-width: 768px) {
+  .my-service {
+    width: 100%;
+  }
+}
+
